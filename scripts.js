@@ -8,6 +8,13 @@
 
 // The variable will change from X to O based on what player turn it is. We need to hold this so we can place an X or O on the board when they're clicked.
 let currentMarker = 'X'
+let board = [
+  "",
+  "",
+  ""
+]
+
+
 
 
 
@@ -87,7 +94,7 @@ const resetBoard = () => {
   
   // @TODO-3: To make your "Restart" button work you'll need to build a line of code here that:
       // collects all of the "td" elements into an HTML Collection: https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp  
-    
+    let squares=document.getElementsByTagName("td")
   // @TODO-3.5: MIX & MATCH, You will need the following pieces of code to build that line:
   // squares
   // .getElementsByTagName("TD")
